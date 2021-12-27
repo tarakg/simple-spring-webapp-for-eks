@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Hotel Transylvania GuestBook</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Hotel Transylvania GuestBook</h1>
+	<h2>Your feedback was submitted. Thank you!</h2>
+    <p th:text="'Name: ' + ${comments.name}" />
+    <p th:text="'Comment: ' + ${comments.content}" />
+    <a href="/comments">Submit another feedback.</a>
+</body>
+</html>
